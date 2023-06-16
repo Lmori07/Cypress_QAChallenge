@@ -1,0 +1,9 @@
+{
+  "textRegName": "Prueba1",
+  "country_code": "USA (+1)",
+  "phone": "7657351500",
+  "textSRegEmail": "joseomv07@gmail.com",
+  "user_password": "Prueba@123.",
+  "tagElementButton":"button[type='button']",
+  "tagElementText":"input[type='search']"
+}
