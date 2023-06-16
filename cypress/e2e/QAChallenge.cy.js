@@ -21,7 +21,7 @@ describe('QA Challenge 10Pearls IFrame', () => {
   })
 
 
-  it.skip('About Us Link', () => {
+  it('About Us Link', () => {
     cy.visit('https://www.tutorialspoint.com/html/html_iframes.htm')
     
     //Accept Outer Banner
@@ -50,7 +50,7 @@ describe('QA Challenge 10Pearls IFrame', () => {
     iframe3.its('0.contentDocument').should('exist').find('a[href="/about/index.htm"]').click({force: true})
   })
 
-  it.skip('Return URL New page', () => {
+  it('Return URL New page', () => {
     cy.visit('https://www.tutorialspoint.com/html/html_iframes.htm')
     
     //Accept Outer Banner
@@ -72,7 +72,7 @@ describe('QA Challenge 10Pearls IFrame', () => {
     cy.iframe('.result',cy.getIframeBody(getIframeDocument)).find('iframe[src="/html/menu.htm"]').should('have.attr', 'src').then(cy.log);
   })
 
-  it.skip('List of all URLs on the page.', () => {
+  it('List of all URLs on the page.', () => {
     cy.visit('https://www.tutorialspoint.com/html/html_iframes.htm')
     
     //Accept Outer Banner
@@ -107,7 +107,7 @@ describe('QA Challenge 10Pearls IFrame', () => {
     cy.pause()
   })
 
-  it.skip('A list of all buttons on the page', () => {
+  it('A list of all buttons on the page', () => {
     cy.visit('https://www.tutorialspoint.com/html/html_iframes.htm')
     
     //Accept Outer Banner
@@ -137,7 +137,7 @@ describe('QA Challenge 10Pearls IFrame', () => {
     cy.elementCounter(userdata.tagElementButton)
   })
 
-  it.skip('A list of all text input fields on the page.', () => {
+  it('A list of all text input fields on the page.', () => {
     cy.visit('https://www.tutorialspoint.com/html/html_iframes.htm')
     
     //Accept Outer Banner
@@ -172,7 +172,7 @@ describe('QA Challenge 10Pearls IFrame', () => {
     cy.elementCounter(userdata.tagElementText)
   })
 
-  it.skip('Create an account', () => {
+  it('Create an account', () => {
     cy.visit('https://www.tutorialspoint.com/html/html_iframes.htm')
     
     //Accept Outer Banner
@@ -257,7 +257,7 @@ describe('QA Challenge 10Pearls IFrame', () => {
     iframe13.its('0.contentDocument').should('exist').find('#signUpNew').click({force: true})
   })
 
-  it.only('Login into the site.', () => {
+  it('Login into the site.', () => {
     cy.visit('https://www.tutorialspoint.com/html/html_iframes.htm')
     
     //Accept Outer Banner
