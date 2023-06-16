@@ -5,5 +5,6 @@
   "textSRegEmail": "joseomv07@gmail.com",
   "user_password": "Prueba@123.",
   "tagElementButton":"button[type='button']",
-  "tagElementText":"input[type='search']"
+  "tagElementText":"input[type='search']",
+  "id":"Prueba1"
 }

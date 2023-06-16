@@ -257,7 +257,7 @@ describe('QA Challenge 10Pearls IFrame', () => {
     iframe13.its('0.contentDocument').should('exist').find('#signUpNew').click({force: true})
   })
 
-  it.skip('Login into the site.', () => {
+  it.only('Login into the site.', () => {
     cy.visit('https://www.tutorialspoint.com/html/html_iframes.htm')
     
     //Accept Outer Banner
@@ -287,13 +287,13 @@ describe('QA Challenge 10Pearls IFrame', () => {
     //Switch back to child iframe
     let iframe4 = cy.iframe('.result',cy.getIframeBody(getIframeDocument)).find('iframe[src="/html/menu.htm"]').should('exist').then(cy.wrap)
     //Writting on ID Text box
-    iframe4.its('0.contentDocument').should('exist').find('#user_email').clear().type('Prueba1')
+    iframe4.its('0.contentDocument').should('exist').find('#user_email').clear().type(userdata.id)
     cy.wait(3000)
 
     //Switch back to child iframe
     let iframe5 = cy.iframe('.result',cy.getIframeBody(getIframeDocument)).find('iframe[src="/html/menu.htm"]').should('exist').then(cy.wrap)
     //Writting on Password Text box
-    iframe5.its('0.contentDocument').should('exist').find('#user_password').clear().type('Prueba1')
+    iframe5.its('0.contentDocument').should('exist').find('#user_password').clear().type(userdata.user_password)
     cy.wait(3000)
 
     //Switch back to child iframe
